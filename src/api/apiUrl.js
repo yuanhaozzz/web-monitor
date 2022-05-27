@@ -22,6 +22,9 @@ const ApiMap = {
   [local]: {
     root: "https://testgos-busi.misslooker.com",
   },
+  default: {
+    root: "https://gos-busi.misslooker.com",
+  },
 };
 
-export default ApiMap[HOST];
+export default ApiMap[HOST] || ApiMap["default"];
