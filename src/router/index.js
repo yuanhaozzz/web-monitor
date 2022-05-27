@@ -12,7 +12,7 @@ class Entry extends Component {
   render() {
     return (
       <Provider store={Store}>
-        <BrowserRouter>
+        <BrowserRouter basename="/monitor">
           <Suspense fallback={<div>{/* loading */}</div>}>
             <Switch>
               <Route path="/login" render={(props) => <Login {...props} />} />
