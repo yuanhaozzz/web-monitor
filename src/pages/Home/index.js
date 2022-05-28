@@ -51,7 +51,6 @@ class Home extends Component {
           >
             增加
           </button>
-          nb
         </div>
       </div>
     );
