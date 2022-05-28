@@ -22,6 +22,7 @@ class Test extends Component {
           >
             增加
           </button>
+          测试cicd test
         </div>
       </div>
     );
