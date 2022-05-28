@@ -51,7 +51,7 @@ class Home extends Component {
           >
             增加
           </button>
-          测试cicd home
+          nb
         </div>
       </div>
     );
