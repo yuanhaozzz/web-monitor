@@ -9,8 +9,9 @@ on:
     - README.md
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
         node-version: [14.x]
@@ -21,7 +22,5 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 14.x
-      - name: npm run build
-        # ci 优先使用缓存
-        run: npm ci
-        run: npm run build
+      - run: npm ci
+      - run: npm run build
